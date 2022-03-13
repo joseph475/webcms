@@ -1,0 +1,201 @@
+// .banner {
+//     // background-image: url('/images/ultistik.jpg');
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     background-position: center center;
+//     height: 420px;
+//     position: relative;
+//     .banner-content {
+//         @extend .center-vertically-horizontally;
+//         text-align: center;
+//     }
+// }
+.guest-sidenav {
+    background-color: white !important;
+}
+.products-container {
+    width: 55%;
+    margin: auto;
+    .card {
+        img {
+            display: block;
+            object-fit: contain;
+            width: 100%;
+            height: 240px;
+            border-radius: 25px;
+        }
+    }
+    .product-card {
+        position: relative;
+        height: 240px;
+        // width: 420px;
+        width: 100%;
+        .product-info {
+            .product-name {
+                font-weight: bold;
+                font-size: larger;
+                margin-bottom: 5px;
+            }
+            .product-desc {
+                font-weight: lighter;
+                margin: 0;
+            }
+        }
+    }
+    a.btn-1 {
+        display: block;
+        margin: auto;
+        width: 128px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}
+.section-subscribe {
+    background-color: #f3f3f3;
+    padding-top: 40px;
+    .subscribe-video {
+        display: block;
+        margin: auto;
+    }
+}
+#subscribe-ultistik-logo {
+    height: 45px;
+}
+
+#subscribe-email {
+    width: 300px;
+    margin: auto;
+    .input-field {
+        box-shadow: 0 4px 5px 0 rgb(0 0 0 / 14%), 0 1px 10px 0 rgb(0 0 0 / 12%),
+            0 2px 4px -1px rgb(0 0 0 / 30%) !important;
+    }
+    .btn-1 {
+        height: 3rem;
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+        box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%),
+            0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
+        border-bottom: none;
+        i {
+            line-height: 3rem;
+        }
+    }
+}
+
+.iframe-container {
+    position: relative;
+    overflow: hidden;
+    width: 70%;
+    padding-top: 40.25%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    // max-width: 1188px;
+}
+
+.products-container .products-row:nth-child(even) {
+    .col {
+        position: relative;
+        &:nth-child(1) {
+            left: 50%;
+        }
+        &:nth-child(2) {
+            right: 50%;
+        }
+    }
+}
+.slider {
+    height: 420px !important;
+    .slides {
+        height: 420px !important;
+        li .caption {
+            // @extend .center-vertically-horizontally;
+            top: 25%;
+            left: 25%;
+            width: 50%;
+            // transform: translate(0) !important;
+            p {
+                color: white;
+            }
+        }
+    }
+}
+.row.slider-center {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+i#next {
+    position: absolute;
+    right: 10px;
+    color: #fff;
+    background: #634e4e99;
+    font-size: 35px;
+    font-weight: 800;
+    border-radius: 50px;
+    border: 1px solid;
+    z-index: 995;
+    cursor: pointer;
+}
+i#prev {
+    position: absolute;
+    left: 20px;
+    color: #fff;
+    background: #634e4e99;
+    font-size: 35px;
+    font-weight: 800;
+    border-radius: 50px;
+    border: 1px solid;
+    z-index: 995;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 899px) {
+    .slider .slides li .caption {
+        left: 5%;
+        width: 90%;
+    }
+    .subs-email-section {
+        width: 80% !important;
+    }
+    .products-container {
+        width: 95%;
+        .card {
+            img {
+                margin: auto;
+                float: initial !important;
+            }
+        }
+        .product-card {
+            margin: auto;
+            float: initial !important;
+            height: auto;
+            padding-bottom: 40px;
+            .product-info {
+                position: relative;
+                top: 0;
+                transform: initial;
+            }
+        }
+    }
+    .products-row:nth-child(even) {
+        .col {
+            position: initial;
+            &:nth-child(1) {
+                left: 0% !important;
+            }
+            &:nth-child(2) {
+                right: 0% !important;
+            }
+        }
+    }
+}

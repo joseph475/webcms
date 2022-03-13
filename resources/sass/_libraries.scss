@@ -1,0 +1,7 @@
+$bg1 : rgb(231,59,130);
+
+.bg1-gradient {
+    background: $bg1 ;
+    background: linear-gradient(180deg, rgba(231,59,130,1) 0%, rgba(239,98,87,1) 75%, rgba(242,114,68,1) 100%);
+}
+
