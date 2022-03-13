@@ -1,8 +1,8 @@
 @extends('guest.layouts.app')
 
-@section('meta_keywords', $data['meta_tags'][0]->keywords)
+{{-- @section('meta_keywords', $data['meta_tags'][0]->keywords)
 @section('meta_description', $data['meta_tags'][0]->description)
-@section('page_title', $data['meta_tags'][0]->page)
+@section('page_title', $data['meta_tags'][0]->page) --}}
 
 @section('content')
     @isset($data['sliders'])
